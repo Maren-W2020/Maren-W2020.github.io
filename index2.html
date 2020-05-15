@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tip Calculator</title>
+</head>
+<body>
+	<body style="background-color:#b9ebea">
+<center>
+<h1 style="font-family:verdana;">Tip Calculator</h1>
+<h4 style="font-family: verdana;">By Maren Walker</h4>
+<h2 style="font-family: verdana;">Enter any price and get the total with a 20% tip</h2>
+<p><input type="text" id="bill">
+<p><button onclick="calcTip(document.getElementById('bill').value)">Calculate Total Price with 20% Tip</button></p>
+<p id="total"></p>
+
+<h4 style="font-family: verdana;">Have a Good Quarentine!</h4>
+<script>
+function calcTip(bill){
+	var totalBill = bill * 1.2
+
+	document.getElementById('total').innerHTML = totalBill;
+
+
+}
+
+
+
+
+</script>
+<p style="font-family: verdana"><a href="index.html">Roman Numeral Converter</a></p>
+
+
+</center>
+</body>
+</html>
